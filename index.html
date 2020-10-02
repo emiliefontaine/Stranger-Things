@@ -8,12 +8,16 @@
 
     body {color: black;
           background-color:black;
-          font-family: Sans-Serif;}
+          font-family: Sans-Serif;
+          display: flex;
+          flex-direction:column;}
 
       h2: {font-sixe:24px; 
 			    font-family: Arial, Helvetica, Sans-Serif; }
+
       p: {font-sixe:16px; 
 			    font-family: Arial, Helvetica, Sans-Serif; }
+
     .texte {background-color:#f5f5dc;
             display:inline-block;
               padding-top: 0px;
@@ -24,8 +28,7 @@
 			        transform: skewY(2deg);}
 
     .texte:hover {transition: all 0.3s ease-in-out;
-                  background-color: #dddddd;
-    }
+                  background-color: #dddddd;}
 
     .grand {height: 400px;
             width: 300px;
@@ -43,8 +46,7 @@
 
     .imagedustin {
       background-image: linear-gradient(#45b2ff,#e8f5ff);
-      border-radius:50%;
-	  }
+      border-radius:50%;}
     .imagelucas{
       background-image: linear-gradient(#ff4431,#ffa76a);
       border-radius:50%;}
@@ -54,8 +56,29 @@
     .imagemike {
       background-image: linear-gradient(#072239,#07d173);
       border-radius:50%;}
- 
-} 
+  
+
+    .space{
+      width:150px;
+      height:150px;}
+
+    @media screen and (min-width: 600px) {
+        body {
+      flex-direction:row;
+        flex-wrap:wrap;}
+        .space{
+        width:0px;
+      height:0px;}
+    }
+    @media screen and (min-width: 900px) {
+        body {
+        flex-direction:row;
+        flex-wrap:nowrap;}
+        .space{
+        widows:150px;px;
+        height:150px;}
+    }
+        
   </style>
 </head>
 <body>
